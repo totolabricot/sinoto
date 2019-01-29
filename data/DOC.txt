@@ -1,0 +1,90 @@
+Welcolme to Sinoto, an experimental software to live-code sinOscilators
+
+In this program you play music in command lines,
+You also can play simultaneously on different computers via Osc
+or connect a Serial Controller (Midi Soon)
+
+
+
+Technical words________________________________________
+
+
+[oscId] =  the identity of the oscilo, this is the number in the white box
+[freq] = frequency(Hz), the human earing zone is above between 20 & 16000
+[vol] = volume, you can set the volume between 0 & 1000
+[pan] = panning also called Stereo, in theory between -1 & 1 (0 is the center)
+[toggle] = a toggle link the volume of an oscilo to the timeline
+[enter] = the enter touch of your keyboard
+[ ] = space touch of your keyboard
+[F,V,P,I,T,] = Maj Letters on your keyboard
+
+
+
+Command lines________________________________________
+
+
+switch the frequency and the volume of an oscilo : 
+
+	syntax: [oscId][ ][freq][ ][vol][enter]
+	exemple: 0 200 120
+
+switch the frequency of an oscilo : 
+
+	syntax: [oscId][ ][F][ ][freq][enter]
+	exemple: 0 F 120
+
+switch the volume of an oscilo : 
+
+	syntax: [osciloId][ ][V][ ][vol][enter]
+	exemple: 0 V 200
+
+switch the panning of an oscilo : 
+
+	syntax: [osciloId][ ][P][ ][pan][enter]
+	exemple: 0 P -1 (remind the pan center is 0)
+
+switch the frequency, the volume and the panning of an oscilo : 
+
+	syntax: [oscId][ ][freq][ ][vol][ ][pan][enter]
+	exemple: 0 200 120 1
+
+mute or unmute an oscilo:
+	syntax: [OscId][ ][M]
+	exemple: 0 M
+
+
+
+Usefull Keys________________________________________
+
+move in your command historic : 
+
+		Up or Down ARROW
+
+clean the line :
+
+		Left ARROW
+		.one hit: the line is clean except for the first argument
+		.two hits: the line is clean
+
+cancel your last action :
+
+		syntax: [<] [enter]
+
+
+Automatic Player________________________________________
+
+send a random line to the program:
+
+		RANDOM
+
+start the Automatic Sinoto Player:
+
+		SINOTO
+
+Stop the Automatic Sinoto Player:
+
+		STOP
+
+
+
+		
